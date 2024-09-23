@@ -1,0 +1,142 @@
+/* Variables */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --neutral-c: #f5f5f5;
+    --gris-oscuro: #8c8c8c;
+    --grafito: #222;
+    --rojo: #b81515;
+}
+
+/* Reset CSS */
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Banner */
+
+#header {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+}
+
+.header__logo {
+    height: 7.5vh;
+}
+
+.header__logo:hover {
+    cursor: pointer;
+}
+
+.header__nav__links {
+    display: flex;
+    gap: 10vw;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+
+.header__nav__links--link>a {
+    color: white;
+}
+
+.header__nav__links--link>a:hover {
+    color: var(--rojo);
+    text-decoration: underline;
+}
+
+
+
+/* Main */
+
+#main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner__container {
+    margin: 0;
+}
+
+.banner__container__img {
+    width: 100vw;
+    height: auto;
+}
+
+.banner__container__caption {
+    font-size: 2rem;
+    color: var(--grafito);
+    text-align: center;
+    margin: 15vh 20vw 15vh 20vw;
+}
+
+
+/* Subtítulo */
+
+.subtitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.subtitle--underline {
+    width: 15vw;
+    height: 4px;
+    background: var(--rojo);
+    margin: 2rem 0 4rem 0;
+}
+
+
+/* Ofertas */
+
+
+
+/* Sitio en Construccion */
+
+
+.construccion__container {
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.construccion__container__img {
+    height: 50vh;
+    width: auto;
+}
+
+.construccion__container__caption {
+    font-size: 2rem;
+    text-align: center;
+}
+
