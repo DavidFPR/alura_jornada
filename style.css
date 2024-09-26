@@ -5,10 +5,11 @@
 :root {
     --blanco: #fff;
     --negro: #000;
-    --neutral-c: #f5f5f5;
+    --gris-claro: #f5f5f5;
     --gris-oscuro: #8c8c8c;
     --grafito: #222;
     --rojo: #b81515;
+    --rojo-oscuro: #8f1010;
 }
 
 /* Reset CSS */
@@ -19,6 +20,9 @@
 
 body {
     margin: 0;
+    height: auto;
+    width: 100vw;
+
 }
 
 a {
@@ -28,7 +32,7 @@ a {
 
 /* Banner */
 
-#header {
+#header__container {
     width: 100%;
     height: 10vh;
     background-color: black;
@@ -37,6 +41,8 @@ a {
     justify-content: space-around;
     align-items: center;
     position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .header__logo {
@@ -75,26 +81,26 @@ a {
     justify-content: center;
 }
 
-.banner {
+.main__container__banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.banner__container {
+.main__container__banner__wrapper {
     margin: 0;
 }
 
-.banner__container__img {
+.main__container__banner__wrapper--img {
     width: 100vw;
-    height: auto;
+    height: 90vh;
 }
 
-.banner__container__caption {
+.main__container__banner__wrapper--caption {
     font-size: 2rem;
     color: var(--grafito);
     text-align: center;
-    margin: 15vh 20vw 15vh 20vw;
+    margin: 10vh 20vw 10vh 20vw;
 }
 
 
@@ -116,8 +122,224 @@ a {
 
 /* Ofertas */
 
+.main__container__specials {
+    width: 60vw;
+    height: auto;
+    margin: 10vh 20vw 10vh 20vw;
+    display: flex;
+    gap: 5vw;
+}
+
+.main__container__specials--japon {
+    background-image: url(./assets/Desktop/desktop-homepage/japon.png);
+    height: 30vh;
+    flex: 1;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.main__container__specials--san-andreas {
+    background-image: url(./assets/Desktop/desktop-homepage/san-andreas.png);
+    height: 30vh;
+    flex: 1;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.main__container__specials h2 {
+    color: var(--blanco);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+
+}
+
+.main__container__specials h3 {
+    color: var(--blanco);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.main__container__boton {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    width: 10vw;
+    height: 5vh;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container__boton:hover {
+    background-color: #8f1010;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 
+/* Búsqueda por Categorias */
+
+.main__container__search {
+    width: 60vw;
+    height: auto;
+    margin: 10vh 20vw 10vh 20vw;
+    display: flex;
+    gap: 5%;
+}
+
+.main__container__search__item {
+    border-radius: 10px;
+    background-color: var(--gris-claro);
+    height: 20vh;
+    flex: 1;
+    color: inherit;
+    transition: transform 0.2s ease;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main__container__search__item:hover {
+    transform: scale(1.02);
+
+}
+
+/* Destinos Populares */
+
+.main__container__popular-destinations {
+
+    width: 60vw;
+    height: auto;
+    margin: 10vh 20vw 10vh 20vw;
+    display: flex;
+    gap: 2%;
+
+}
+
+
+.main__container__popular-destinations__destination--figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 49%;
+}
+
+/* .main__container__popular-destinations__destination--img {
+} */
+
+.main__container__popular-destinations__destination--caption {
+    margin-bottom: 3vh;
+}
+
+
+/* Condiciones de Pago */
+
+.main__container__payment {
+    width: 60vw;
+    height: auto;
+    margin: 10vh 20vw 10vh 20vw;
+    display: flex;
+}
+
+.main__container__payment--figure {
+    display: flex;
+    gap: 5%;
+    margin: 0;
+
+}
+
+
+/* Testimonios */
+
+.main__container__testimonials {
+    width: 60vw;
+    height: auto;
+    margin: 10vh 20vw 10vh 20vw;
+    display: flex;
+    gap: 1vw;
+}
+
+.main__container__testimonials__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__container__testimonials__card--profile {
+    display: flex;
+}
+
+.main__container__testimonials__card--rating {
+    margin-left: 1vw;
+}
+
+.star__icon {
+    width: 1.5vw;
+    height: auto;
+}
+
+/* Pre-Footer */
+
+.main__container__pre-footer {
+    width: 100vw;
+    min-height: auto;
+}
+
+/* Footer */
+
+#footer__container {
+    background-color: var(--negro);
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footer__container__contact-info p, h3{
+    color: white;
+}
+
+.footer__container__contact-info--logo {
+    width: 10vw;
+    margin-top: 2vh;
+}
+
+.footer__container__social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__container__social-media h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer__container__social-media__link-container {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+}
 /* Sitio en Construccion */
 
 
@@ -139,4 +361,3 @@ a {
     font-size: 2rem;
     text-align: center;
 }
-
