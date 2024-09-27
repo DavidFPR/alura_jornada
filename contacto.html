@@ -30,8 +30,100 @@
       </nav>
     </header>
 
-    <main></main>
+    <main id="main__container">
+      <section class="main__container__banner">
+        <figure class="main__container__banner__wrapper">
+          <img
+            class="main__container__banner__wrapper--img"
+            src="./assets/Desktop/desktop-contacto/banner-contacto.png"
+            alt=""
+          />
+          <figcaption
+            class="main__container__banner__wrapper__overlay--caption"
+          >
+            <h1>¡Ponte en Contacto!</h1>
+            <div class="heading__underline"></div>
+            <p>
+              ¿Dudas, sugerencias, problemas por resolver? ¡Tenemos un equipo de
+              servicio al cliente listo para ayudarte!
+            </p>
+          </figcaption>
+        </figure>
+      </section>
 
-    <footer></footer>
+      <section class="main__container__contact">
+        <h2 class="heading">Rellena el Formulario:</h2>
+        <div class="heading__underline"></div>
+        <p>
+          Tenemos un equipo siempre listo para resolver tus dudas, problemas,
+          ofrecerte consejos y orientaciones objetivas para hacer tu experiencia
+          lo más placentera y tranquila posible. Completa tus datos y te
+          contactaremos según la urgencia de tu solicitud. ¡Puedes confiar en
+          nosotros!
+        </p>
+      </section>
+
+
+      <section class="main__container__contact__form">
+        <div class="form-container">
+          <form class="main__container__contact__form--form">
+              <label for="name">Tu nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre">
+  
+              <div class="half-inputs">
+                  <input type="tel" id="phone" name="phone" placeholder="Teléfono">
+                  <input type="email" id="email" name="email" placeholder="Correo">
+              </div>
+  
+              <input type="text" id="subject" name="subject" placeholder="Tema">
+  
+              <textarea id="message" name="message" placeholder="Tema" rows="4"></textarea>
+  
+              <button class="main__container__contact__form--button" type="submit">¡Enviar!</button>
+          </form>
+      </div>
+      </section>
+
+      <img
+        class="main__container__pre-footer"
+        src="./assets/Desktop/desktop-contacto/contacto-prefooter.png"
+        alt=""
+      />
+    </main>
+
+    <footer id="footer__container">
+      <div class="footer__container__contact-info">
+        <img
+          class="footer__container__contact-info--logo"
+          src="./assets/@header-footer/logo-jornada-travel.png"
+          alt=""
+        />
+        <p>Horario de atención: 08:00 - 20:00 (Lunes a Sábado)</p>
+        <p>
+          Desarrollado por David Pérez para Alura Latam. Proyecto ficticio sin
+          fines comerciales.
+        </p>
+      </div>
+      <div class="footer__container__social-media">
+        <h3>Accede a nuestras redes sociales:</h3>
+        <div class="footer__container__social-media__link-container">
+          <a
+            class="footer__container__social-media__link-container--icon"
+            href="https://www.whatsapp.com/"
+            ><img src="./assets/@header-footer/ whatsapp.svg" alt=""
+          /></a>
+          <a
+            class="footer__container__social-media__link-container--icon"
+            href="https://www.instagram.com/"
+            ><img src="./assets/@header-footer/instagram.svg" alt=""
+          /></a>
+          <a
+            class="footer__container__social-media__link-container--icon"
+            href="https://x.com/"
+            ><img src="./assets/@header-footer/twitter.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -29,16 +29,21 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-size: 1.2rem;
+}
 
-/* Banner */
+/* Header */
 
 #header__container {
     width: 100%;
     height: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
@@ -55,7 +60,7 @@ a {
 
 .header__nav__links {
     display: flex;
-    gap: 10vw;
+    gap: 5vw;
     list-style: none;
     font-size: 1.5rem;
 }
@@ -106,14 +111,14 @@ a {
 
 /* Subtítulo */
 
-.subtitle {
+.heading {
     font-size: 2.5rem;
     font-weight: 600;
-    margin: 0;
+    margin: 10vh 0 0 0;
 }
 
-.subtitle--underline {
-    width: 15vw;
+.heading__underline {
+    width: 10vw;
     height: 4px;
     background: var(--rojo);
     margin: 2rem 0 4rem 0;
@@ -267,6 +272,10 @@ a {
 
 }
 
+.main__container__payment--figure>img {
+    max-width: 45vw;
+}
+
 
 /* Testimonios */
 
@@ -296,6 +305,10 @@ a {
     height: auto;
 }
 
+.testimonial__name {
+    color: var(--negro);
+}
+
 /* Pre-Footer */
 
 .main__container__pre-footer {
@@ -315,7 +328,8 @@ a {
 
 }
 
-.footer__container__contact-info p, h3{
+.footer__container__contact-info p,
+h3 {
     color: white;
 }
 
@@ -340,6 +354,178 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+
+
+/* Blog */
+
+.main__container__banner__wrapper__overlay--caption {
+    position: absolute;
+    top: 40vh;
+    left: 20vw;
+    right: 0;
+    color: var(--blanco);
+    max-width: 30%;
+}
+
+.main__container__banner__wrapper__overlay--caption p {
+    font-size: 1.5rem;
+}
+
+.main__container__blogpost {
+    width: 60vw;
+    height: auto;
+    margin: 10vh 20vw 10vh 20vw;
+    display: flex;
+}
+
+.main__container__blogpost p {
+    margin-bottom: 5vh;
+}
+
+.main__container__blogpost p.no-margin {
+    margin-bottom: 0;
+}
+
+.main__container__blogpost--tokio>img:first-of-type {
+    float: right;
+    margin: 0 0 1em 1em;
+    max-width: 50%;
+}
+
+.main__container__blogpost--tokio h3 {
+    color: var(--negro)
+}
+
+.main__container__blogpost--tokio>figure {
+    width: 100%;
+    margin: 5vh 0 5vh 0;
+}
+
+.footnote {
+    color: var(--grafito);
+    font-style: italic;
+}
+
+.main__container__blogpost p::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main__container__posts {
+    width: 60vw;
+    height: auto;
+    margin: 10vh 20vw 10vh 20vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.main__container__posts__card {
+    flex: 1;
+}
+
+.main__container__posts__card>figure {
+    margin: 0;
+}
+
+.main__container__posts__card>figure>img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Contacto */
+
+.main__container__contact {
+    width: 60vw;
+    height: auto;
+    margin: 10vh 20vw 10vh 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container__contact p {
+    text-align: center;
+}
+
+
+.form-container {
+    padding: 0;
+    width: 40vw;
+    background-color: var(--blanco);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 1vw 1vw;
+    margin-bottom: 5vh;
+    border: none;
+    border-bottom: 2px solid var(--gris-claro);
+    font-size: 14px;
+    background-color: transparent;
+    outline: none;
+}
+
+input[type="text"]#name {
+    border-bottom: 2px solid var(--rojo-oscuro);
+    /* Red bottom border for the first input */
+}
+
+.half-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.half-inputs input {
+    width: 48%;
+    border-bottom: 2px solid var(--gris-claro);
+}
+
+input:focus {
+    border-bottom-color: var(--rojo-oscuro);
+}
+
+textarea:focus {
+    border-color: var(--rojo-oscuro);
+}
+
+textarea {
+    border: 2px solid var(--gris-claro);
+    resize: none;
+
+}
+
+.main__container__contact__form--button {
+    width: 50%;
+    padding: 10px;
+    background-color: var(--rojo);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 10vh;
+}
+
+.main__container__contact__form--button:hover {
+    background-color: var(--rojo-oscuro);
+}
+
 /* Sitio en Construccion */
 
 
