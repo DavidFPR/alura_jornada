@@ -29,14 +29,19 @@
         </ul>
       </nav>
     </header>
+    
     <main id="main__container">
       <section class="main__container__banner">
         <figure class="main__container__banner__wrapper">
-          <img
-            class="main__container__banner__wrapper--img"
-            src="./assets/Desktop/desktop-homepage/banner-index.png"
-            alt=""
-          />
+          <picture>
+            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/Tablet/tablet-index/tablet-banner.png">
+            <img
+              class="main__container__banner__wrapper--img"
+              src="./assets/Desktop/desktop-homepage/banner-index.png"
+              alt=""
+            />
+          </picture>
+
           <figcaption class="main__container__banner__wrapper--caption">
             Somos una agencia apasionada por crear viajes inolvidables. Desde el
             destino hasta la selección de actividades, nos encargamos de todos

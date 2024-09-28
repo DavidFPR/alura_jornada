@@ -33,6 +33,10 @@ p {
     font-size: 1.2rem;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 /* Header */
 
 #header__container {
@@ -50,6 +54,7 @@ p {
     z-index: 999;
 }
 
+/* Logo Styles */
 .header__logo {
     height: 7.5vh;
 }
@@ -58,6 +63,7 @@ p {
     cursor: pointer;
 }
 
+/* Navigation Links Styles */
 .header__nav__links {
     display: flex;
     gap: 5vw;
@@ -65,16 +71,14 @@ p {
     font-size: 1.5rem;
 }
 
-
-.header__nav__links--link>a {
+.header__nav__links--link > a {
     color: white;
 }
 
-.header__nav__links--link>a:hover {
+.header__nav__links--link > a:hover {
     color: var(--rojo);
     text-decoration: underline;
 }
-
 
 
 /* Main */
@@ -85,6 +89,8 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+/* Banner */
 
 .main__container__banner {
     display: flex;
@@ -107,6 +113,16 @@ p {
     text-align: center;
     margin: 10vh 20vw 10vh 20vw;
 }
+
+.banner__index {
+    background-image: url(./assets/Desktop/desktop-homepage/banner-index.png);
+}
+
+.banner__blog {}
+
+banner__japon {}
+
+banner__contact {}
 
 
 /* Subtítulo */
@@ -481,7 +497,6 @@ textarea {
 
 input[type="text"]#name {
     border-bottom: 2px solid var(--rojo-oscuro);
-    /* Red bottom border for the first input */
 }
 
 .half-inputs {
@@ -547,3 +562,189 @@ textarea {
     font-size: 2rem;
     text-align: center;
 }
+
+/* Media Queries */
+
+/* Laptop */
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    #header__container {
+        padding: 0 5vw 0 5vw;
+    }
+
+    #main__container {
+        width: 100vw;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .main__container__blogpost,
+    .main__container__contact,
+    .main__container__payment,
+    .main__container__testimonials,
+    .main__container__posts,
+    .main__container__search,
+    .main__container__specials,
+    .main__container__popular-destinations {
+        width: 90vw;
+        margin: 10vh 10vw 10vh 10vw;
+
+    }
+
+    .main__container__banner__wrapper--caption {
+        margin: 10vh 5vw 10vh 5vw;
+    }
+
+    .main__container__contact__form {
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .main__container__banner__wrapper__overlay--caption {
+        max-width: 40%;
+    }
+
+    .heading__underline {
+        width: 20vw;
+    }
+
+}
+
+/* Tablet Portrait */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+
+    #header__container {
+        padding: 0 5vw 0 5vw;
+    }
+
+    #main__container {
+        width: 100vw;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .main__container__blogpost,
+    .main__container__contact,
+    .main__container__payment,
+    .main__container__testimonials,
+    .main__container__posts,
+    .main__container__search,
+    .main__container__specials,
+    .main__container__popular-destinations {
+        width: 90vw;
+        margin: 10vh 10vw 10vh 10vw;
+
+    }
+
+    .main__container__banner__wrapper--caption {
+        margin: 10vh 5vw 10vh 5vw;
+    }
+
+    .main__container__contact__form {
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .main__container__banner__wrapper__overlay--caption {
+        max-width: 40%;
+    }
+
+    .heading__underline {
+        width: 20vw;
+    }
+
+    .header__nav {
+        display: none; /* Hide the nav for medium-sized screens */
+    }
+
+    .burger-menu {
+        display: none; /* Hide burger menu button */
+    }
+
+    .header__nav__links {
+        display: flex; /* Show links */
+    }
+}
+
+/* Phone Portrait */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    #header__container {
+        padding: 0 5vw 0 5vw;
+    }
+
+    #main__container {
+        width: 100vw;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .main__container__blogpost,
+    .main__container__contact,
+    .main__container__payment,
+    .main__container__testimonials,
+    .main__container__posts,
+    .main__container__search,
+    .main__container__specials,
+    .main__container__popular-destinations {
+        width: 90vw;
+        margin: 10vh 10vw 10vh 10vw;
+
+    }
+
+    .main__container__banner__wrapper--caption {
+        margin: 10vh 5vw 10vh 5vw;
+    }
+
+    .main__container__contact__form {
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .main__container__banner__wrapper__overlay--caption {
+        max-width: 40%;
+    }
+
+    .heading__underline {
+        width: 20vw;
+    }
+}
+
+/* XS Phone Portrait */
+
+@media only screen and (max-width: 479px) {}

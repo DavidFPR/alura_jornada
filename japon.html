@@ -9,7 +9,7 @@
   </head>
   <body>
     <header id="header__container">
-      <a href="#"
+      <a href="index.html"
         ><img
           class="header__logo"
           src="./assets/@header-footer/logo-white.png"
@@ -33,11 +33,15 @@
     <main id="main__container">
       <section class="main__container__banner">
         <figure class="main__container__banner__wrapper">
-          <img
-            class="main__container__banner__wrapper--img"
-            src="./assets/Desktop/desktop-destino/banner-destinations.png"
-            alt=""
-          />
+          <picture>
+            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/Tablet/tablet-destino/destino-banner.png">
+            <img
+              class="main__container__banner__wrapper--img"
+              src="./assets/Desktop/desktop-destino/banner-destinations.png"
+              alt=""
+            />
+          </picture>
+
           <figcaption
             class="main__container__banner__wrapper__overlay--caption"
           >
@@ -125,14 +129,14 @@
         <article class="main__container__testmionials__card">
           <div class="main__container__testimonials__card--text">
             <p>
-              "Jornada ha sido una de las mejores agencias de viajes que he
-              experimentado. El servicio al cliente fue excepcional, y todo el
-              equipo fue muy atento y servicial".
+              "Tuve una experiencia inolvidable. El paquete de Japón me permitió
+              explorar desde templos antiguos hasta ciudades modernas. Y el
+              precio fue accesible, ¡lo recomiendo!"
             </p>
           </div>
           <div class="main__container__testimonials__card--profile">
             <img
-              src="./assets/Desktop/desktop-homepage/testimonial_ana.png"
+              src="./assets/Desktop/desktop-destino/testimonials-javier.png"
               alt=""
             />
             <div class="main__container__testimonials__card--rating">
@@ -164,14 +168,14 @@
         <article class="main__container__testmionials__card">
           <div class="main__container__testimonials__card--text">
             <p>
-              "Te recomiendo firmemente la agencia de viajes Jornada. Ofrecen un
-              servicio personalizado y de alta calidad que superó mis
-              expectativas en mi último viaje".
+              "Mi viaje a Tokio fue increíble. El itinerario personalizado me
+              permitió hacer mucho en poco tiempo. ¡Superó mis expectativas y ya
+              quiero viajar con Jornada de nuevo!"
             </p>
           </div>
           <div class="main__container__testimonials__card--profile">
             <img
-              src="./assets/Desktop/desktop-homepage/testimonial_amauri.png"
+              src="./assets/Desktop/desktop-destino/testimonials_maria.png"
               alt=""
             />
             <div class="main__container__testimonials__card--rating">
@@ -203,13 +207,13 @@
         <article class="main__container__testmionials__card">
           <div class="main__container__testimonials__card--text">
             <p>
-              "¡Mi viaje con Jornada fue increíble! Te la recomiendo mucho si
-              buscas una experiencia emocionante y personalizada".
+              "¡Mi viaje a Osaka fue inolvidable! ¡Jornada organizó todo
+              perfectamente, lo recomiendo sin dudarlo!"
             </p>
           </div>
           <div class="main__container__testimonials__card--profile">
             <img
-              src="./assets/Desktop/desktop-homepage/testimonial_lauro.png"
+              src="./assets/Desktop/desktop-destino/testimonials_ana.png"
               alt=""
             />
             <div class="main__container__testimonials__card--rating">
@@ -239,10 +243,10 @@
         </article>
       </section>
       <img
-      class="main__container__pre-footer"
-      src="./assets/Desktop/desktop-destino/japan-prefooter.png"
-      alt=""
-    />
+        class="main__container__pre-footer"
+        src="./assets/Desktop/desktop-destino/japan-prefooter.png"
+        alt=""
+      />
     </main>
 
     <footer id="footer__container">
@@ -278,7 +282,6 @@
           /></a>
         </div>
       </div>
-      
     </footer>
   </body>
 </html>

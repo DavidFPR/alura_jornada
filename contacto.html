@@ -9,7 +9,7 @@
   </head>
   <body>
     <header id="header__container">
-      <a href="#"
+      <a href="./index.html"
         ><img
           class="header__logo"
           src="./assets/@header-footer/logo-white.png"
@@ -33,11 +33,15 @@
     <main id="main__container">
       <section class="main__container__banner">
         <figure class="main__container__banner__wrapper">
-          <img
-            class="main__container__banner__wrapper--img"
-            src="./assets/Desktop/desktop-contacto/banner-contacto.png"
-            alt=""
-          />
+          <picture>
+            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/Tablet/tablet-contact/tablet-banner.png">
+            <img
+              class="main__container__banner__wrapper--img"
+              src="./assets/Desktop/desktop-contacto/banner-contacto.png"
+              alt=""
+            />
+          </picture>
+
           <figcaption
             class="main__container__banner__wrapper__overlay--caption"
           >
@@ -63,25 +67,44 @@
         </p>
       </section>
 
-
       <section class="main__container__contact__form">
         <div class="form-container">
           <form class="main__container__contact__form--form">
-              <label for="name">Tu nombre</label>
-              <input type="text" id="name" name="name" placeholder="Tu nombre">
-  
-              <div class="half-inputs">
-                  <input type="tel" id="phone" name="phone" placeholder="Teléfono">
-                  <input type="email" id="email" name="email" placeholder="Correo">
-              </div>
-  
-              <input type="text" id="subject" name="subject" placeholder="Tema">
-  
-              <textarea id="message" name="message" placeholder="Tema" rows="4"></textarea>
-  
-              <button class="main__container__contact__form--button" type="submit">¡Enviar!</button>
+            <label for="name">Tu nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" />
+
+            <div class="half-inputs">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Teléfono"
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Correo"
+              />
+            </div>
+
+            <input type="text" id="subject" name="subject" placeholder="Tema" />
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tema"
+              rows="4"
+            ></textarea>
+
+            <button
+              class="main__container__contact__form--button"
+              type="submit"
+            >
+              ¡Enviar!
+            </button>
           </form>
-      </div>
+        </div>
       </section>
 
       <img

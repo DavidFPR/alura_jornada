@@ -33,11 +33,15 @@
     <main id="main__container">
       <section class="main__container__banner">
         <figure class="main__container__banner__wrapper">
-          <img
-            class="main__container__banner__wrapper--img"
-            src="./assets/Desktop/desktop-blog/banner-blog.png"
-            alt=""
-          />
+          <picture>
+            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/Tablet/tablet-blog/blog-banner.png">
+            <img
+              class="main__container__banner__wrapper--img"
+              src="./assets/Desktop/desktop-blog/banner-blog.png"
+              alt=""
+            />
+          </picture>
+
           <figcaption
             class="main__container__banner__wrapper__overlay--caption"
           >
