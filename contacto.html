@@ -34,7 +34,14 @@
       <section class="main__container__banner">
         <figure class="main__container__banner__wrapper">
           <picture>
-            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/Tablet/tablet-contact/tablet-banner.png">
+            <source
+              media="(min-width: 0px) and (max-width: 767px)"
+              srcset="assets/Mobile/mobile-contact/contact-banner.png"
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1024px)"
+              srcset="assets/Tablet/tablet-contact/tablet-banner.png"
+            />
             <img
               class="main__container__banner__wrapper--img"
               src="./assets/Desktop/desktop-contacto/banner-contacto.png"
@@ -107,11 +114,16 @@
         </div>
       </section>
 
-      <img
+      <picture>
+        <source media="(min-width: 1px) and (max-width: 767px)" srcset="assets/Mobile/mobile-contact/mobile-prefooter.png">
+        <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/Tablet/tablet-contact/tablet-prefooter.png">
+        <img
         class="main__container__pre-footer"
         src="./assets/Desktop/desktop-contacto/contacto-prefooter.png"
         alt=""
       />
+      </picture>
+
     </main>
 
     <footer id="footer__container">

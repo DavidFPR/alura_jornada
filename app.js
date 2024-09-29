@@ -1,4 +1,7 @@
-document.querySelector('.burger-menu').addEventListener('click', function() {
-    document.querySelector('.header__nav').classList.toggle('active');
-  });
-  
+const burgerMenu = document.getElementById('burgerMenu');
+const navLinks = document.getElementById('navLinks');
+
+burgerMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+  burgerMenu.classList.toggle('active');
+});

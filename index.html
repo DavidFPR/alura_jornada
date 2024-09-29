@@ -8,6 +8,7 @@
     <title>Jornada | Inicio</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header id="header__container">
       <a href="#"
         ><img
@@ -15,6 +16,7 @@
           src="./assets/@header-footer/logo-white.png"
           alt="Logo de Jornada"
       /></a>
+      <!-- NAV -->
       <nav class="header__nav">
         <ul class="header__nav__links">
           <li class="header__nav__links--link">
@@ -30,10 +32,13 @@
       </nav>
     </header>
     
+    <!-- MAIN -->
     <main id="main__container">
+      <!-- BANNER -->
       <section class="main__container__banner">
         <figure class="main__container__banner__wrapper">
           <picture>
+            <source media="(min-width: 480px) and (max-width: 767px)" srcset="assets/Mobile/mobile-index/mobile-banner.png">
             <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/Tablet/tablet-index/tablet-banner.png">
             <img
               class="main__container__banner__wrapper--img"
@@ -53,7 +58,7 @@
 
       <h2 class="heading">Ofertas de la Semana</h2>
       <div class="heading__underline"></div>
-
+<!-- SPECIALS -->
       <section class="main__container__specials">
         <div class="main__container__specials--japon">
           <h3>HOTEL + VUELO</h3>
@@ -290,11 +295,16 @@
           </div>
         </article>
       </section>
-      <img
+      <picture>
+        <source media="(min-width: 1px) and (max-width: 767px)" srcset="assets/Mobile/mobile-index/mobile-prefooter.png">
+        <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/Tablet/tablet-index/tablet-prefooter.png">
+        <img
         class="main__container__pre-footer"
         src="./assets/Desktop/desktop-homepage/footer.png"
         alt=""
       />
+      </picture>
+
     </main>
 
     <footer id="footer__container">

@@ -54,7 +54,7 @@ h1 {
     z-index: 999;
 }
 
-/* Logo Styles */
+/* Logo  */
 .header__logo {
     height: 7.5vh;
 }
@@ -63,7 +63,7 @@ h1 {
     cursor: pointer;
 }
 
-/* Navigation Links Styles */
+/* Nav Links */
 .header__nav__links {
     display: flex;
     gap: 5vw;
@@ -71,11 +71,11 @@ h1 {
     font-size: 1.5rem;
 }
 
-.header__nav__links--link > a {
+.header__nav__links--link>a {
     color: white;
 }
 
-.header__nav__links--link > a:hover {
+.header__nav__links--link>a:hover {
     color: var(--rojo);
     text-decoration: underline;
 }
@@ -118,12 +118,6 @@ h1 {
     background-image: url(./assets/Desktop/desktop-homepage/banner-index.png);
 }
 
-.banner__blog {}
-
-banner__japon {}
-
-banner__contact {}
-
 
 /* Subtítulo */
 
@@ -148,13 +142,14 @@ banner__contact {}
     height: auto;
     margin: 10vh 20vw 10vh 20vw;
     display: flex;
-    gap: 5vw;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main__container__specials--japon {
     background-image: url(./assets/Desktop/desktop-homepage/japon.png);
     height: 30vh;
-    flex: 1;
+    width: 45%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -166,7 +161,7 @@ banner__contact {}
 .main__container__specials--san-andreas {
     background-image: url(./assets/Desktop/desktop-homepage/san-andreas.png);
     height: 30vh;
-    flex: 1;
+    width: 45%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -264,8 +259,7 @@ banner__contact {}
     max-width: 49%;
 }
 
-/* .main__container__popular-destinations__destination--img {
-} */
+
 
 .main__container__popular-destinations__destination--caption {
     margin-bottom: 3vh;
@@ -344,6 +338,10 @@ banner__contact {}
 
 }
 
+.footer__container__contact-info {
+    margin: 3vw;
+}
+
 .footer__container__contact-info p,
 h3 {
     color: white;
@@ -357,6 +355,8 @@ h3 {
 .footer__container__social-media {
     display: flex;
     flex-direction: column;
+    margin: 3vw;
+
 }
 
 .footer__container__social-media h3 {
@@ -626,7 +626,15 @@ textarea {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     html {
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    figcaption {
+        font-size: 1.5rem;
     }
 
     #header__container {
@@ -640,6 +648,11 @@ textarea {
     img {
         max-width: 100%;
     }
+
+    .header__logo {
+        height: 5vh;
+    }
+
 
     .main__container__blogpost,
     .main__container__contact,
@@ -674,20 +687,56 @@ textarea {
 
     .heading__underline {
         width: 20vw;
+
     }
 
-    .header__nav {
-        display: none; /* Hide the nav for medium-sized screens */
-    }
-
-    .burger-menu {
-        display: none; /* Hide burger menu button */
+    .main__container__boton {
+        width: 30vw;
     }
 
     .header__nav__links {
-        display: flex; /* Show links */
+        gap: 3vw;
+    }
+
+    .main__container__search {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        /* Adjust gap for spacing */
+        width: 80vw;
+        /* Adjust the container width for smaller screens */
+        margin: 5vh auto;
+        /* Center the section */
+    }
+
+    .main__container__search__item {
+        height: 25vh;
+        /* Adjust the height for grid items */
+    }
+
+    .main__container__popular-destinations {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .main__container__popular-destinations__destination--figure {
+        max-width: 100%;
+    }
+
+    .main__container__payment--figure {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .main__container__payment--figure img {
+        max-width: 90vw;
     }
 }
+
 
 /* Phone Portrait */
 
@@ -698,6 +747,7 @@ textarea {
     }
 
     #header__container {
+        height: 5vh;
         padding: 0 5vw 0 5vw;
     }
 
@@ -707,6 +757,14 @@ textarea {
 
     img {
         max-width: 100%;
+    }
+
+    .header__logo {
+        height: 3vh;
+    }
+
+    .main__container__banner__wrapper--img {
+        height: 50vh;
     }
 
     .main__container__blogpost,
@@ -736,15 +794,309 @@ textarea {
         width: 100%;
     }
 
+    .main__container__specials {
+        gap: 2vh;
+    }
+
+    .main__container__specials--japon {
+        height: 30vh;
+        width: 100%;
+
+    }
+
+    .main__container__specials--san-andreas {
+        height: 30vh;
+        width: 100%;
+    } 
+
     .main__container__banner__wrapper__overlay--caption {
         max-width: 40%;
     }
 
     .heading__underline {
-        width: 20vw;
+        width: 40vw;
+
+    }
+
+    .main__container__boton {
+        width: 30vw;
+    }
+
+    .header__nav__links {
+        gap: 3vw;
+    }
+
+    .main__container__specials {
+        flex-direction: column;
+    }
+
+
+
+    .main__container__search {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        /* Adjust gap for spacing */
+        width: 80vw;
+        /* Adjust the container width for smaller screens */
+        margin: 5vh auto;
+        /* Center the section */
+    }
+
+    .main__container__search__item {
+        height: 25vh;
+        /* Adjust the height for grid items */
+    }
+
+    .main__container__popular-destinations {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .main__container__popular-destinations__destination--figure {
+        max-width: 100%;
+    }
+
+    .main__container__payment--figure {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .main__container__payment--figure img {
+        max-width: 90vw;
+    }
+
+    .main__container__testimonials {
+        gap: 1vh;
+        flex-direction: column;
+    }
+
+    .main__container__banner__wrapper__overlay--caption {
+        top: 15vh;
+        max-width: 60%;
+    }
+
+    .main__container__blogpost--tokio>img:first-of-type {
+        float: right;
+        height: 20vh;
+        min-width: 50%;
+    }
+    
+    .main__container__posts {
+        flex-direction: column;
+    }
+
+    h2.heading:nth-child(5) {
+        text-align: center;
+    }
+
+    .construccion__container {
+        max-width: 100vw;
+        margin: 0;
+    }
+
+    .construccion__container__caption {
+        text-align: center;
+        max-width: 90vw;
+    }
+
+    .construccion__container__img {
+        height: auto;
+        max-width: 50%;
+    }
+
+    .main__container__blogpost--tokio > figure:nth-child(6) {
+        text-align: center;
+
+    }
+
+    .footer__container__contact-info--logo {
+        height: 3vh;
+        width: auto;
     }
 }
 
 /* XS Phone Portrait */
 
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+     html {
+        font-size: 12px;
+    }
+
+    #header__container {
+        height: 5vh;
+        padding: 0 5vw 0 5vw;
+    }
+
+    #main__container {
+        width: 100vw;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .header__logo {
+        height: 3vh;
+    }
+
+    .main__container__banner__wrapper--img {
+        height: 50vh;
+    }
+
+    .main__container__blogpost,
+    .main__container__contact,
+    .main__container__payment,
+    .main__container__testimonials,
+    .main__container__posts,
+    .main__container__search,
+    .main__container__specials,
+    .main__container__popular-destinations {
+        width: 90vw;
+        margin: 10vh 10vw 10vh 10vw;
+
+    }
+
+    .main__container__banner__wrapper--caption {
+        margin: 10vh 5vw 10vh 5vw;
+    }
+
+    .main__container__contact__form {
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .main__container__specials {
+        gap: 2vh;
+    }
+
+    .main__container__specials--japon {
+        height: 30vh;
+        width: 100%;
+
+    }
+
+    .main__container__specials--san-andreas {
+        height: 30vh;
+        width: 100%;
+    } 
+
+    .main__container__banner__wrapper__overlay--caption {
+        max-width: 40%;
+    }
+
+    .heading__underline {
+        width: 40vw;
+
+    }
+
+    .main__container__boton {
+        width: 30vw;
+    }
+
+    .header__nav__links {
+        gap: 3vw;
+    }
+
+    .main__container__specials {
+        flex-direction: column;
+    }
+
+
+
+    .main__container__search {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        /* Adjust gap for spacing */
+        width: 80vw;
+        /* Adjust the container width for smaller screens */
+        margin: 5vh auto;
+        /* Center the section */
+    }
+
+    .main__container__search__item {
+        height: 25vh;
+        /* Adjust the height for grid items */
+    }
+
+    .main__container__popular-destinations {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .main__container__popular-destinations__destination--figure {
+        max-width: 100%;
+    }
+
+    .main__container__payment--figure {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .main__container__payment--figure img {
+        max-width: 90vw;
+    }
+
+    .main__container__testimonials {
+        gap: 1vh;
+        flex-direction: column;
+    }
+
+    .main__container__banner__wrapper__overlay--caption {
+        top: 15vh;
+        max-width: 60%;
+    }
+
+    .main__container__blogpost--tokio>img:first-of-type {
+        float: right;
+        height: 20vh;
+        min-width: 50%;
+    }
+    
+    .main__container__posts {
+        flex-direction: column;
+    }
+
+    h2.heading:nth-child(5) {
+        text-align: center;
+    }
+
+    .construccion__container {
+        max-width: 100vw;
+        margin: 0;
+    }
+
+    .construccion__container__caption {
+        text-align: center;
+        max-width: 90vw;
+    }
+
+    .construccion__container__img {
+        height: auto;
+        max-width: 50%;
+    }
+
+    .main__container__blogpost--tokio > figure:nth-child(6) {
+        text-align: center;
+
+    }
+
+    .footer__container__contact-info--logo {
+        height: 3vh;
+        width: auto;
+    }
+}
