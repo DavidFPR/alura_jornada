@@ -63,6 +63,8 @@ h1 {
     cursor: pointer;
 }
 
+/* NAV */
+
 /* Nav Links */
 .header__nav__links {
     display: flex;
@@ -80,6 +82,31 @@ h1 {
     text-decoration: underline;
 }
 
+
+/* Hamburger */
+
+.hamburger__menu {
+    padding: .2rem;
+    width: 5vh;
+    height: 5vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hamburger__menu--line {
+    width: 2.5rem;
+    height: 3px;
+    background-color: var(--blanco);
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+
+
+.hamburger__menu:active .hamburger__menu--line {
+    background-color: var(--rojo); /* Change color when clicked */
+}
 
 /* Main */
 
@@ -645,6 +672,8 @@ textarea {
         width: 100vw;
     }
 
+
+
     img {
         max-width: 100%;
     }
@@ -740,7 +769,7 @@ textarea {
 
 /* Phone Portrait */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 360px) and (max-width: 767px) {
 
     html {
         font-size: 12px;
@@ -760,188 +789,11 @@ textarea {
     }
 
     .header__logo {
-        height: 3vh;
-    }
-
-    .main__container__banner__wrapper--img {
-        height: 50vh;
-    }
-
-    .main__container__blogpost,
-    .main__container__contact,
-    .main__container__payment,
-    .main__container__testimonials,
-    .main__container__posts,
-    .main__container__search,
-    .main__container__specials,
-    .main__container__popular-destinations {
-        width: 90vw;
-        margin: 10vh 10vw 10vh 10vw;
-
-    }
-
-    .main__container__banner__wrapper--caption {
-        margin: 10vh 5vw 10vh 5vw;
-    }
-
-    .main__container__contact__form {
-        width: 70vw;
-        display: flex;
-        justify-content: center;
-    }
-
-    .form-container {
-        width: 100%;
-    }
-
-    .main__container__specials {
-        gap: 2vh;
-    }
-
-    .main__container__specials--japon {
-        height: 30vh;
-        width: 100%;
-
-    }
-
-    .main__container__specials--san-andreas {
-        height: 30vh;
-        width: 100%;
-    } 
-
-    .main__container__banner__wrapper__overlay--caption {
-        max-width: 40%;
-    }
-
-    .heading__underline {
-        width: 40vw;
-
-    }
-
-    .main__container__boton {
-        width: 30vw;
-    }
-
-    .header__nav__links {
-        gap: 3vw;
-    }
-
-    .main__container__specials {
-        flex-direction: column;
-    }
-
-
-
-    .main__container__search {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem;
-        /* Adjust gap for spacing */
-        width: 80vw;
-        /* Adjust the container width for smaller screens */
-        margin: 5vh auto;
-        /* Center the section */
-    }
-
-    .main__container__search__item {
-        height: 25vh;
-        /* Adjust the height for grid items */
-    }
-
-    .main__container__popular-destinations {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5vh;
-    }
-
-    .main__container__popular-destinations__destination--figure {
-        max-width: 100%;
-    }
-
-    .main__container__payment--figure {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5vh;
-    }
-
-    .main__container__payment--figure img {
-        max-width: 90vw;
-    }
-
-    .main__container__testimonials {
-        gap: 1vh;
-        flex-direction: column;
-    }
-
-    .main__container__banner__wrapper__overlay--caption {
-        top: 15vh;
-        max-width: 60%;
-    }
-
-    .main__container__blogpost--tokio>img:first-of-type {
-        float: right;
-        height: 20vh;
-        min-width: 50%;
-    }
-    
-    .main__container__posts {
-        flex-direction: column;
-    }
-
-    h2.heading:nth-child(5) {
-        text-align: center;
-    }
-
-    .construccion__container {
-        max-width: 100vw;
-        margin: 0;
-    }
-
-    .construccion__container__caption {
-        text-align: center;
-        max-width: 90vw;
-    }
-
-    .construccion__container__img {
-        height: auto;
-        max-width: 50%;
-    }
-
-    .main__container__blogpost--tokio > figure:nth-child(6) {
-        text-align: center;
-
-    }
-
-    .footer__container__contact-info--logo {
-        height: 3vh;
-        width: auto;
-    }
-}
-
-/* XS Phone Portrait */
-
-@media only screen and (max-width: 479px) {
-     html {
-        font-size: 12px;
-    }
-
-    #header__container {
         height: 5vh;
-        padding: 0 5vw 0 5vw;
     }
 
-    #main__container {
-        width: 100vw;
-    }
-
-    img {
-        max-width: 100%;
-    }
-
-    .header__logo {
-        height: 3vh;
+    .hamburguer__menu {
+        display: flex;
     }
 
     .main__container__banner__wrapper--img {
@@ -1099,4 +951,29 @@ textarea {
         height: 3vh;
         width: auto;
     }
+    .header__nav__links {
+        height: 20vh;
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position absolute to avoid taking space */
+        top: 3vh; /* Adjust based on header height */
+        left: 0;
+        width: 100%; /* Full width */
+        background-color: black; /* Match header background */
+        z-index: 998; /* Make sure it is above other elements */
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .header__nav__links.show {
+        display: flex; /* Show links when toggled */
+
+    }
+
+    .hamburger__menu {
+        display: flex; /* Show hamburger icon */
+    }
 }
+
