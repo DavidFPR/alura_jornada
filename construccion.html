@@ -15,21 +15,75 @@
           src="./assets/@header-footer/logo-white.png"
           alt="Logo de Jornada"
       /></a>
+      <!-- NAV -->
       <nav class="header__nav">
         <ul class="header__nav__links">
           <li class="header__nav__links--link">
-            <a href="./index.html">Volver al Inicio</a>
+            <a href="./blog.html">Blog</a>
           </li>
+          <li class="header__nav__links--link">
+            <a href="./construccion.html">Paquetes de Viaje</a>
+          </li>
+          <li class="header__nav__links--link">
+            <a href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger__menu" id="hamburger">
+          <div class="hamburger__menu--line"></div>
+          <div class="hamburger__menu--line"></div>
+          <div class="hamburger__menu--line"></div>
+        </div>
       </nav>
     </header>
 
     <main>
-        <figure class="construccion__container">
-            <img class="construccion__container__img" src="./assets/construccion.jpg" alt="Sitio en Construccion">
-            <figcaption class="construccion__container__caption">Este sitio está en construccion. ¡Gracias por tu paciencia!</figcaption>
-        </figure>
+      <figure class="construccion__container">
+        <img
+          class="construccion__container__img"
+          src="./assets/construccion.jpg"
+          alt="Sitio en Construccion"
+        />
+        <figcaption class="construccion__container__caption">
+          Este sitio está en construccion. ¡Gracias por tu paciencia!
+        </figcaption>
+      </figure>
     </main>
-
-    <footer></footer>
+    <footer id="footer__container">
+      <div class="footer__container__contact-info">
+        <img
+          class="footer__container__contact-info--logo"
+          src="./assets/@header-footer/logo-jornada-travel.png"
+          alt=""
+        />
+        <p>Horario de atención: 08:00 - 20:00 (Lunes a Sábado)</p>
+        <p>
+          Desarrollado por David Pérez para Alura Latam. Proyecto ficticio sin
+          fines comerciales.
+        </p>
+      </div>
+      <div class="footer__container__social-media">
+        <h3>Accede a nuestras redes sociales:</h3>
+        <div class="footer__container__social-media__link-container">
+          <a
+            class="footer__container__social-media__link-container--icon"
+            href="https://www.whatsapp.com/"
+            ><img src="./assets/@header-footer/ whatsapp.svg" alt=""
+          /></a>
+          <a
+            class="footer__container__social-media__link-container--icon"
+            href="https://www.instagram.com/"
+            ><img src="./assets/@header-footer/instagram.svg" alt=""
+          /></a>
+          <a
+            class="footer__container__social-media__link-container--icon"
+            href="https://x.com/"
+            ><img src="./assets/@header-footer/twitter.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>

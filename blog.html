@@ -15,10 +15,11 @@
           src="./assets/@header-footer/logo-white.png"
           alt="Logo de Jornada"
       /></a>
+      <!-- NAV -->
       <nav class="header__nav">
         <ul class="header__nav__links">
           <li class="header__nav__links--link">
-            <a href="./blog.html">Blog</a>
+            <a href="#">Blog</a>
           </li>
           <li class="header__nav__links--link">
             <a href="./construccion.html">Paquetes de Viaje</a>
@@ -27,6 +28,13 @@
             <a href="./contacto.html">Contacto</a>
           </li>
         </ul>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger__menu" id="hamburger">
+          <div class="hamburger__menu--line"></div>
+          <div class="hamburger__menu--line"></div>
+          <div class="hamburger__menu--line"></div>
+        </div>
       </nav>
     </header>
 
@@ -34,8 +42,14 @@
       <section class="main__container__banner">
         <figure class="main__container__banner__wrapper">
           <picture>
-            <source media="(min-width: 480px) and (max-width: 767px)" srcset="assets/Mobile/mobile-blog/blog-banner.png">
-            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/Tablet/tablet-blog/blog-banner.png">
+            <source
+              media="(min-width: 480px) and (max-width: 767px)"
+              srcset="assets/Mobile/mobile-blog/blog-banner.png"
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1024px)"
+              srcset="assets/Tablet/tablet-blog/blog-banner.png"
+            />
             <img
               class="main__container__banner__wrapper--img"
               src="./assets/Desktop/desktop-blog/banner-blog.png"
@@ -79,8 +93,14 @@
           </p>
           <figure>
             <picture>
-              <source media="(min-width: 0px) and (max-width: 767px)" srcset="assets/Mobile/mobile-blog/Tokyo2.png">
-              <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/Tablet/tablet-destino/destino-banner.png">
+              <source
+                media="(min-width: 0px) and (max-width: 767px)"
+                srcset="assets/Mobile/mobile-blog/Tokyo2.png"
+              />
+              <source
+                media="(min-width: 768px) and (max-width: 1024px)"
+                srcset="assets/Tablet/tablet-destino/destino-banner.png"
+              />
               <img src="./assets/Desktop/desktop-blog/tokyo2.png" alt="" />
             </picture>
             <figcaption class="footnote">
@@ -229,5 +249,6 @@
         </div>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

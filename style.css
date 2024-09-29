@@ -572,7 +572,7 @@ textarea {
 
 
 .construccion__container {
-    height: 60vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -956,10 +956,10 @@ textarea {
         display: none; /* Hide links by default */
         flex-direction: column; /* Stack links vertically */
         position: absolute; /* Position absolute to avoid taking space */
-        top: 3vh; /* Adjust based on header height */
+        top: 2.5vh; /* Adjust based on header height */
         left: 0;
         width: 100%; /* Full width */
-        background-color: black; /* Match header background */
+        background-color: var(--negro); /* Match header background */
         z-index: 998; /* Make sure it is above other elements */
         justify-content: space-around;
         align-items: center;
