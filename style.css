@@ -988,4 +988,15 @@ textarea {
         display: flex;
         /* Show hamburger icon */
     }
+
+    #footer__container {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__container__contact-info {
+        text-align: center;
+    }
 }
