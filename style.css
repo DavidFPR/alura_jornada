@@ -103,9 +103,8 @@ h1 {
 }
 
 
-
-.hamburger__menu:active .hamburger__menu--line {
-    background-color: var(--rojo); /* Change color when clicked */
+.hamburger__menu.active .hamburger__menu--line {
+    background-color: var(--rojo); /* Turn lines red when active */
 }
 
 /* Main */
@@ -956,7 +955,7 @@ textarea {
         display: none; /* Hide links by default */
         flex-direction: column; /* Stack links vertically */
         position: absolute; /* Position absolute to avoid taking space */
-        top: 2vh; /* Adjust based on header height */
+        top: 2.5vh; /* Adjust based on header height */
         left: 0;
         width: 100%; /* Full width */
         background-color: var(--negro); /* Match header background */
