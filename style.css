@@ -99,12 +99,14 @@ h1 {
     width: 2.5rem;
     height: 3px;
     background-color: var(--blanco);
-    transition: background-color 0.3s ease; /* Smooth transition for color change */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for color change */
 }
 
 
 .hamburger__menu.active .hamburger__menu--line {
-    background-color: var(--rojo); /* Turn lines red when active */
+    background-color: var(--rojo);
+    /* Turn lines red when active */
 }
 
 /* Main */
@@ -839,7 +841,7 @@ textarea {
     .main__container__specials--san-andreas {
         height: 30vh;
         width: 100%;
-    } 
+    }
 
     .main__container__banner__wrapper__overlay--caption {
         max-width: 40%;
@@ -917,7 +919,7 @@ textarea {
         height: 20vh;
         min-width: 50%;
     }
-    
+
     .main__container__posts {
         flex-direction: column;
     }
@@ -941,7 +943,7 @@ textarea {
         max-width: 50%;
     }
 
-    .main__container__blogpost--tokio > figure:nth-child(6) {
+    .main__container__blogpost--tokio>figure:nth-child(6) {
         text-align: center;
 
     }
@@ -950,16 +952,26 @@ textarea {
         height: 3vh;
         width: auto;
     }
+
     .header__nav__links {
         height: 20vh;
-        display: none; /* Hide links by default */
-        flex-direction: column; /* Stack links vertically */
-        position: absolute; /* Position absolute to avoid taking space */
-        top: 2.5vh; /* Adjust based on header height */
+        display: none;
+        /* Hide links by default */
+        flex-direction: column;
+        /* Stack links vertically */
+        position: absolute;
+        /* Position absolute to avoid taking space */
+
+        top: 2.5vh;
+        /* Adjust based on header height */
+
         left: 0;
-        width: 100%; /* Full width */
-        background-color: var(--negro); /* Match header background */
-        z-index: 998; /* Make sure it is above other elements */
+        width: 100%;
+        /* Full width */
+        background-color: var(--negro);
+        /* Match header background */
+        z-index: 998;
+        /* Make sure it is above other elements */
         justify-content: space-around;
         align-items: center;
         padding: 0;
@@ -967,12 +979,13 @@ textarea {
     }
 
     .header__nav__links.show {
-        display: flex; /* Show links when toggled */
+        display: flex;
+        /* Show links when toggled */
 
     }
 
     .hamburger__menu {
-        display: flex; /* Show hamburger icon */
+        display: flex;
+        /* Show hamburger icon */
     }
 }
-
